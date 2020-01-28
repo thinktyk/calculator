@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="2020년 기준의 연봉별 실수령액 및 공제액을 확인하세요.">
+	<meta name="keywords" content="2020년, 연봉 계산기, 연봉 탐색기, 급여 계산기, 급여 탐색기, 실수령액, 연봉실수령액, 월급실수령액, 월급 계산기, 소득 수준, 연봉 실수령액 계산기, 월급 실수령액 계산기, 실수령액 계산기">
+
+	<title>연봉 실수령액 표 | 2020년 기준의 연봉별 실수령액 및 공제액을 확인하세요. </title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="./theme-saas.min.css" rel="stylesheet" type="text/css" media="all">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		/*utility*/
+		input[type='text']{
+			text-align:right;
+		}
+		.block{margin-block-start: 0.5em;
+			margin-block-end: 0.5em;}
+			/*body section*/
+			.body-bg{background-color:#F5F5F5;}
+			/*box*/
+			.input-box{margin-bottom:0.5em;padding:1em;}
+			.output-box{margin-bottom:0.5em;padding:1em;}
+			.title-mb{
+				margin-bottom: 1rem;
+			}
+			.input-title{
+				font-size:1.4rem;
+			}
+			.output-title{
+				font-size:1.4rem;
+			}
+			@keyframes hideLoader{0%{ width: 100%; height: 100%; }100%{ width: 0; height: 0; }  }  body > div.loader{ position: fixed; background: white; width: 100%; height: 100%; z-index: 1071; opacity: 0; transition: opacity .5s ease; overflow: hidden; pointer-events: none; display: flex; align-items: center; justify-content: center;}body:not(.loaded) > div.loader{ opacity: 1;}body:not(.loaded){ overflow: hidden;}  body.loaded > div.loader{animation: hideLoader .5s linear .5s forwards;  } /* Typing Animation */.loading-animation {width: 6px;height: 6px;border-radius: 50%;animation: typing 1s linear infinite alternate;position: relative;left: -12px;}@keyframes typing {0% {background-color: rgba(100,100,100, 1);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),24px 0px 0px 0px rgba(100,100,100, 0.2);}25% {background-color: rgba(100,100,100, 0.4);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 2),24px 0px 0px 0px rgba(100,100,100, 0.2);}75% {background-color: rgba(100,100,100, 0.4);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),24px 0px 0px 0px rgba(100,100,100, 1);}}
+		</style>
+		<script type="text/javascript">
+			window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
+		</script>
+	</head>
+	<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" class="body-bg loaded">
+		<div class="loader">
+			<div class="loading-animation"></div>
+		</div>
+
+		<div class="navbar-container" style="min-height:72px;">
+			<nav class="navbar navbar-expand-lg justify-content-between navbar-light border-bottom-0 bg-white position-fixed" data-sticky="top" style="max-width: 2304px; top: 0px;">
+				<div class="container">
+					<div class="col flex-fill px-0 d-flex justify-content-between">
+						<a class="navbar-brand mr-0 fade-page" href="Calculator.lol:ko-kr:financial:salary-calculator.html">
+							Calculator.lol
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg icon navbar-toggler-open" data-src="assets/img/icons/interface/menu.svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" fill="#212529"></path>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg icon navbar-toggler-close" data-src="assets/img/icons/interface/cross.svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path d="M16.2426 6.34311L6.34309 16.2426C5.95257 16.6331 5.95257 17.2663 6.34309 17.6568C6.73362 18.0473 7.36678 18.0473 7.75731 17.6568L17.6568 7.75732C18.0473 7.36679 18.0473 6.73363 17.6568 6.34311C17.2663 5.95258 16.6331 5.95258 16.2426 6.34311Z" fill="#212529"></path>
+								<path d="M17.6568 16.2426L7.75734 6.34309C7.36681 5.95257 6.73365 5.95257 6.34313 6.34309C5.9526 6.73362 5.9526 7.36678 6.34313 7.75731L16.2426 17.6568C16.6331 18.0473 17.2663 18.0473 17.6568 17.6568C18.0474 17.2663 18.0474 16.6331 17.6568 16.2426Z" fill="#212529"></path>
+							</svg>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse col px-0 px-lg-2 flex-fill">
+						<div class="py-2 py-lg-0">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a href="" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">연봉 실수령액 표</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">월급 실수령액 표</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link dropdown-toggle disabled" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">대출이자 계산기</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link dropdown-toggle disabled" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">예금 계산기</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link dropdown-toggle disabled" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">적금 계산기</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- Navigation -->
+
+		<div class="container mb-2">
+			<nav aria-label="breadcrumb" style="background-color:transparent;">
+				<ol class="breadcrumb" style="background-color:transparent;padding:0px;">
+					<li class="breadcrumb-item"><a href="Calculator.lol:ko-kr:home.html" class="text-secondary">home</a></li>
+					<li class="breadcrumb-item"><a href="Calculator.lol:ko-kr:financial.html" class="text-secondary">financial</a></li>
+					<li class="breadcrumb-item" aria-current="page"><a href="Calculator.lol:ko-kr:financial:salary-calculator.html" class="text-secondary">salary table</a></li>
+				</ol>
+			</nav>
+		</div>
+
+		<!-- Breadcrumb -->
+
+		<div class="container">
+			<h5>연봉 실수령액 표.</h5>
+			<h6>2020년 기준의 연봉별 실수령액 및 공제액을 확인하세요.</h6>
+		</div>		
+		<!-- Headline -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="output-box shadow-sm bg-white rounded">
+						<table class="table table-sm font-weight-light table-striped">
+							<thead class="table-borderless">
+								<tr>
+									<th scope="col">연봉</th>
+									<th scope="col">실수령액</th>
+									<th scope="col">공제액계</th>
+									<th scope="col">국민연금</th>
+									<th scope="col">건강보험</th>
+									<th scope="col">장기요양</th>
+									<th scope="col">고용보험</th>
+									<th scope="col">소득세</th>
+									<th scope="col">지방소득세</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" colspan="1" class="font-weight-light">1,000만원</th>
+									<td>11771,033</td>
+									<td>62,300</td>
+									<td>32,990</td>
+									<td>1,680</td>
+									<td>4,760</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="1" class="font-weight-light">1,100만원</th>
+									<td>11771,033</td>
+									<td>62,300</td>
+									<td>32,990</td>
+									<td>1,680</td>
+									<td>4,760</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="1" class="font-weight-light">1,200만원</th>
+									<td>11771,033</td>
+									<td>62,300</td>
+									<td>32,990</td>
+									<td>1,680</td>
+									<td>4,760</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+				
+				</div>
+
+				<!-- Output 영역 -->
+				<div class="col-md-3">
+					<div class="jumbotron text-center text-warning" style="margin-bottom:7px;">Advertisement</div>
+
+					<div class="mt-3">
+						<p class="lead">이런건 어떠세요?</p>
+						<ul>
+							<li><a href="">연봉 실수령액표</a></li>
+							<li><a href="">월급 실수령액표</a></li>
+							<li><a href="" class="disabled">대출이자 계산기</a></li>
+							<li><a href="" class="disabled">예금 계산기</a></li>
+							<li><a href="" class="disabled">적금 계산기</a></li>
+						</ul>
+					</div>
+					
+					<!-- Output card -->
+				</div>
+				<div class="col-sm-12">
+					<div class="jumbotron text-center text-warning" style="margin-bottom:7px;">Advertisement</div>
+				</div>	
+			</div>
+		</div>
+	</body>
+	</html>
